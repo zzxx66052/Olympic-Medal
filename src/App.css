@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'ONE-Mobile-Title';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(216, 216, 216);
+  font-family: 'ONE-Mobile-Title';
+}
+
+.root {
+  display: block;  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px #333333;
+}
+
+.title{
+  color: aqua;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.formGroup{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  font-size: 17px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divInput {
+  display: block;
+}
+
+input{
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.btnGroup {
+  flex-shrink: 0;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 10px 20px;
+  font-weight: 900;
+  font-size: 13px;
+  border: 1px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.sortDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.selectMedal {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #d3d3fd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+th {
+  display: table-cell;
+  background-color: #0049af;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+.deleteBtn {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #e62222;
+ }
+ 
+ .deleteBtn, span {
+  transition: 200ms;
+ }
+ 
+ .deleteBtn .text {
+  transform: translateX(20px);
+  color: white;
+  font-weight: 400;
+ }
+ 
+ .deleteBtn .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(60px);
+  height: 15px;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .deleteBtn svg {
+  width: 10px;
+  fill: #eee;
+ }
+ 
+ .deleteBtn:hover {
+  background: #ff3636;
+ }
+ 
+ .deleteBtn:hover .text {
+  color: transparent;
+ }
+ 
+ .deleteBtn:hover .icon {
+  width: 120px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ .deleteBtn:focus {
+  outline: none;
+ }
+ 
+ .deleteBtn:active .icon svg {
+  transform: scale(0.8);
+ }
